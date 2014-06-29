@@ -1,7 +1,7 @@
 #
-# Java Dockerfile
+# Java Dockerfile (for Java 8)
 #
-# https://github.com/dockerfile/java
+# https://github.com/ayucat/java
 #
 
 # Pull base image.
@@ -13,7 +13,7 @@ RUN \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
-  apt-get install -y oracle-java7-installer
+  apt-get install -y oracle-java8-installer
 
 # Define mountable directories.
 VOLUME ["/data"]

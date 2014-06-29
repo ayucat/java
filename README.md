@@ -1,7 +1,7 @@
 ## Java Dockerfile
 
 
-This repository contains **Dockerfile** of [Java](https://www.java.com/) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/dockerfile/java/) published to the public [Docker Registry](https://index.docker.io/).
+This repository contains **Dockerfile** of [Java 8](https://jdk8.java.net/) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/ayucat/java/) published to the public [Docker Registry](https://index.docker.io/).
 
 
 ### Dependencies
@@ -13,19 +13,19 @@ This repository contains **Dockerfile** of [Java](https://www.java.com/) for [Do
 
 1. Install [Docker](https://www.docker.io/).
 
-2. Download [trusted build](https://index.docker.io/u/dockerfile/java/) from public [Docker Registry](https://index.docker.io/): `docker pull dockerfile/java`
+2. Download [trusted build](https://index.docker.io/u/ayucat/java/) from public [Docker Registry](https://index.docker.io/): `docker pull ayucat/java`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/java" github.com/dockerfile/java`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="ayucat/java" github.com/ayucat/java`)
 
 
 ### Usage
 
-    docker run -it --rm dockerfile/java
+    docker run -it --rm ayucat/java
 
 #### Run `java`
 
-    docker run -it --rm dockerfile/java java
+    docker run -it --rm ayucat/java java
 
 #### Run `javac`
 
-    docker run -it --rm dockerfile/java javac
+    docker run -it --rm ayucat/java javac
